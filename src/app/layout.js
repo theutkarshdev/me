@@ -7,6 +7,9 @@ export const metadata = {
   title: "Utkarsh Kushwaha | Professional UI/UX Developer - Hire Now!",
   description:
     "Looking for a web user interface developer? I am a professional UI/UX Developer and Web User Interface Developer with expertise in Frontend Web Development.",
+  openGraph: {
+    images: "http://utkarsh.online/img/meta_image.webp",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -1,9 +1,15 @@
-import Image from 'next/image'
+import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Hero from "./sections/Hero";
+import MyWork from "./sections/MyWorks";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <h1 className='text-7xl font-bold'>Utkarsh Kushwaha</h1>
+    <main className="min-h-screen">
+      <Hero />
+      <About />
+      <MyWork />
+      <Contact />
     </main>
-  )
+  );
 }

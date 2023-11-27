@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Looking for a web user interface developer? I am a professional UI/UX Developer and Web User Interface Developer with expertise in Frontend Web Development.",
   openGraph: {
-    images: "/opengraph-image.jpg",
+    images: "http://utkarsh.online/img/meta_image.webp",
   },
 };
 

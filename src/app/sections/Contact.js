@@ -2,7 +2,7 @@
 import React from "react";
 import toast from "react-hot-toast";
 import { IoClose } from "react-icons/io5";
-import profilePic from "../../../public/me.png";
+import profilePic from "../assets/me.png";
 import Image from "next/image";
 
 const Contact = () => {

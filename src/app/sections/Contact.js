@@ -48,7 +48,7 @@ const Contact = () => {
         <div className="max-w-2xl lg:max-w-5xl mx-auto">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">Contact us</h1>
-            <p className="mt-1 text-gray-600 dark:text-gray-400">We'd love to talk about how we can help you.</p>
+            <p className="mt-1 text-gray-600 dark:text-gray-400">We&apos;d love to talk about how we can help you.</p>
           </div>
           <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
             {/* Card */}
@@ -134,7 +134,7 @@ const Contact = () => {
                   </button>
                 </div>
                 <div className="mt-3 text-center">
-                  <p className="text-sm text-gray-500">We'll get back to you in 1-2 business days.</p>
+                  <p className="text-sm text-gray-500">We&apos;ll get back to you in 1-2 business days.</p>
                 </div>
               </form>
             </div>
@@ -160,7 +160,7 @@ const Contact = () => {
                 </svg>
                 <div className="grow">
                   <h3 className="font-semibold text-gray-800 dark:text-gray-200">Knowledgebase</h3>
-                  <p className="mt-1 text-sm text-gray-500">We're here to help with any questions or code.</p>
+                  <p className="mt-1 text-sm text-gray-500">We&apos;re here to help with any questions or code.</p>
                   <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-primary-orange" href="#">
                     Contact support
                     <svg

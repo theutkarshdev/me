@@ -11,7 +11,7 @@ const Contact = () => {
       <div
         className={`${
           t.visible ? "animate-enter" : "animate-leave"
-        } max-w-sm w-full bg-primary-lightcard dark:bg-primary-darkcard rounded-xl pointer-events-auto flex  border border-gray-200 dark:border-gray-800 shadow-xl`}
+        } max-w-sm w-full bg-primary-lcard dark:bg-primary-dcard rounded-xl pointer-events-auto flex  border border-gray-200 dark:border-gray-800 shadow-xl`}
       >
         <div className="flex-1 w-0 p-4">
           <div className="flex items-center">
@@ -22,8 +22,8 @@ const Contact = () => {
                 alt="Picture of the author"
                 width={50}
                 height={50}
+                placeholder="blur"
                 // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
               />
             </div>
             <div className="ml-3 flex-1">
@@ -52,7 +52,7 @@ const Contact = () => {
           </div>
           <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
             {/* Card */}
-            <div className="bg-primary-lightcard dark:bg-primary-darkcard flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
+            <div className="bg-primary-lcard dark:bg-primary-dcard flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
               <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">Fill in the form</h2>
               <form>
                 <div className="grid gap-4">

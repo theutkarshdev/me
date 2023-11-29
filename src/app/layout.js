@@ -1,10 +1,7 @@
-import { Inter } from "next/font/google";
-import "./styles/globals.css";
+import React from "react";
 import Providers from "./components/theme/providers";
-import ThemeSwitcher from "./components/theme/ThemeSwitcher";
 import Header from "./components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import "./styles/globals.css";
 
 export const metadata = {
   title: "Utkarsh Kushwaha | Professional UI/UX Developer - Hire Now!",
@@ -17,8 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="scroll-smooth">
+      <body className="bg-primary-lighttheme dark:bg-primary-darktheme">
         <Providers>
           <Header />
           {children}

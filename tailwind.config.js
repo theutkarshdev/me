@@ -15,6 +15,12 @@ module.exports = {
       colors: {
         primary: {
           orange: "#f75022",
+          darktheme: "#1F1F1F",
+          lighttheme: "#F2F2F2",
+          darkcard: "#303030",
+          lightcard: "#FFFFFF",
+          darkshadow: "11px 10px 38px hsla(0, 0%, 0%, 38%)",
+          lightshadow: "11px 10px 38px hsla(0, 0%, 0%, 12%)",
         },
       },
     },

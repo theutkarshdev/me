@@ -2,10 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-blur {
-  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.1), rgba(var(--bs-body-bg-rgb), 1) 85%),
-    radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.25), transparent 50%),
-    radial-gradient(ellipse at top right, rgba(var(--bs-info-rgb), 0.15), transparent 50%),
-    radial-gradient(ellipse at center right, rgba(var(--bs-warning-rgb), 0.15), transparent 50%),
-    radial-gradient(ellipse at center left, rgba(var(--bs-danger-rgb), 0.1), transparent 50%);
+@keyframes enter {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate-enter {
+  animation: enter 0.2s ease-out;
+}
+@keyframes leave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+.animate-leave {
+  animation: leave 0.15s ease-in forwards;
 }

@@ -3,22 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 8000",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 8000",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "framer-motion": "^10.16.5",
+    "mongoose": "^8.0.2",
     "next": "14.0.3",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.48.2",
-    "react-hot-toast": "^2.4.1",
-    "react-icons": "^4.12.0"
+    "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
+    "@iconify/react": "^4.1.1",
+    "@types/react": "18.2.39",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",

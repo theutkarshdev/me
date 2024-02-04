@@ -1,44 +1,10 @@
 "use client";
 import React from "react";
 import toast from "react-hot-toast";
-import { IoClose } from "react-icons/io5";
-import profilePic from "../assets/me.png";
-import Image from "next/image";
 
 const Contact = () => {
   const formHandler = () => {
-    toast.custom((t) => (
-      <div
-        className={`${
-          t.visible ? "animate-enter" : "animate-leave"
-        } max-w-sm w-full bg-primary-lcard dark:bg-primary-dcard rounded-xl pointer-events-auto flex  border border-gray-200 dark:border-gray-800 shadow-xl`}
-      >
-        <div className="flex-1 w-0 p-4">
-          <div className="flex items-center">
-            <div className="flex-shrink-0 pt-0.5">
-              <Image
-                className="rounded-full border-2 border-orange-500"
-                src={profilePic}
-                alt="Picture of the author"
-                width={50}
-                height={50}
-                placeholder="blur"
-                // blurDataURL="data:..." automatically provided
-              />
-            </div>
-            <div className="ml-3 flex-1">
-              <p className="text-sm font-medium text-gray-900 dark:text-gray-300">Thank You</p>
-              <p className="text-xs text-gray-500 dark:text-gray-200">I will reach out to you as soon as possible.</p>
-            </div>
-          </div>
-        </div>
-        <div className="flex">
-          <button onClick={() => toast.dismiss(t.id)} className="w-full p-4 flex items-center justify-center">
-            <IoClose size={25} className="bg-primary-lighttheme dark:bg-primary-darktheme rounded-lg p-1" />
-          </button>
-        </div>
-      </div>
-    ));
+    toast.success("Successfully Sent...");
   };
 
   return (

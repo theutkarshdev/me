@@ -1,6 +1,5 @@
 import React from "react";
 import Providers from "./components/theme/providers";
-import Header from "./components/Header";
 import "./styles/globals.css";
 
 export const metadata = {
@@ -28,10 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-primary-lighttheme dark:bg-primary-darktheme">
-        <Providers>
-          <Header />
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

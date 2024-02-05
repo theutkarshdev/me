@@ -1,7 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Titan+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .d-font-outline {
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.1);
+  }
+  .l-font-outline {
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.1);
+  }
+}
 
 @keyframes enter {
   0% {
@@ -31,4 +41,14 @@
 }
 .cursive-font {
   font-family: "Courgette", cursive;
+}
+.titan-font {
+  font-family: "Titan One", sans-serif;
+}
+.bg_image--1 {
+  background-image: url("/bg-image-1.jpg");
+}
+.bg_image {
+  background-repeat: no-repeat;
+  background-size: cover;
 }

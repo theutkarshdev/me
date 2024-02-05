@@ -22,11 +22,11 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full">
+    <header className="fixed top-0 w-full z-50">
       <motion.div
         variants={headerVariants}
         animate={hidden ? "hidden" : "visible"}
-        className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-2 bg-primary-lcard dark:bg-primary-dcard shadow-primary-lcard dark:shadow-primary-dcard"
+        className="shadow-primary-lshadow flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-2 bg-primary-lcard dark:bg-primary-dcard dark:shadow-primary-dshadow"
       >
         <nav
           className="relative max-w-[85rem] flex flex-wrap basis-full items-center w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"

@@ -15,12 +15,12 @@ const Contact = () => {
       {/* Contact Us */}
       <div className="w-full max-w-screen-lg py-10 mx-auto">
         <div className="relative w-full">
-          <h1 className="w-full uppercase text-6xl sm:text-7xl md:text-9xl text-center titan-font text-transparent l-font-outline dark:d-font-outline">
+          <h1 className="w-full text-6xl sm:text-7xl md:text-9xl text-center titan-font text-transparent l-font-outline dark:d-font-outline">
             Contact us
           </h1>
           <p
             className="text-2xl sm:text-3xl w-full text-center md:text-5xl titan-font
-         absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-70"
+            absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-70"
           >
             How we can help you.
           </p>

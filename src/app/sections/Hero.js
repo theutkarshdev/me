@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import UserImg from "../assets/2.png";
+import UserImg from "../assets/4.png";
 import BgImage from "../assets/bg-image-1.jpg";
 import React from "react";
 import { Icon } from "@iconify/react";

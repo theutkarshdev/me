@@ -58,3 +58,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.mask1 {
+  -webkit-mask-image: url("http://localhost:3001/avatar.png");
+  mask-image: url("http://localhost:3001/avatar.png");
+  -webkit-mask-size: 80%;
+  mask-size: 80%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.rounded-5xl {
+  border-radius: 2rem;
+}

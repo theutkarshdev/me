@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import AboutImg from "../assets/avatar.png";
+import AboutImg from "../assets/me-about.png";
 import { Icon } from "@iconify/react";
 
 const About = () => {
@@ -46,7 +46,7 @@ const About = () => {
         </div>
         <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
           <div className="flex justify-center">
-            <Image alt="image" className="rounded-xl w-2/3" sizes="100vw" src={AboutImg} />
+            <Image alt="image" className="rounded-xl w-4/5 mask1" sizes="100vw" src={AboutImg} />
           </div>
         </div>
       </div>

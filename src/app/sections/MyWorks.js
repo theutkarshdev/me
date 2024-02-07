@@ -17,7 +17,7 @@ const MyWork = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 px-4">
         {[1, 2, 3, 4, 5, 6].map((item) => (
-          <div key={item} className="p-5 rounded-2xl bg-primary-lcard dark:bg-primary-dcard">
+          <div key={item} className="p-5 rounded-5xl bg-primary-lcard dark:bg-primary-dcard">
             <Icon className="text-7xl text-primary-orange" icon="fluent:shield-task-24-regular" />
             <h3 className="text-3xl font-bold">Some Awesome Peoject</h3>
             <p className="mt-5 text-sm">

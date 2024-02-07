@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         primary: {
           orange: "#f75022",
+          orangeFade: "#F67D4A",
           darktheme: "#1F1F1F",
           lighttheme: "#F2F2F2",
           dcard: "#303030",

@@ -60,8 +60,8 @@
 }
 
 .mask1 {
-  -webkit-mask-image: url("http://localhost:3001/avatar.png");
-  mask-image: url("http://localhost:3001/avatar.png");
+  -webkit-mask-image: url("/avatar.png");
+  mask-image: url("/avatar.png");
   -webkit-mask-size: 80%;
   mask-size: 80%;
   -webkit-mask-repeat: no-repeat;

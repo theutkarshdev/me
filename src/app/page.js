@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import PreLoader from "./components/PreLoader";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Skills from "./sections/Skills";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ export default function Home() {
           <Hero />
           <About />
           <MyWork />
+          <Skills />
           <Contact />
           <Footer />
         </>

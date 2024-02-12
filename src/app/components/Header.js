@@ -74,6 +74,12 @@ export default function Header() {
               </a>
               <a
                 className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
+                href="#my-skills"
+              >
+                My Skills
+              </a>
+              <a
+                className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
                 href="#contact"
               >
                 Contact

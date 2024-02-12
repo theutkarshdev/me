@@ -8,14 +8,11 @@ const Contact = () => {
   };
 
   return (
-    <div
-      id="contact"
-      className="flex min-h-screen items-center justify-center bg-primary-lcard dark:bg-primary-dcard py-10 px-4"
-    >
+    <div id="contact" className="min-h-screen py-10 max-w-screen-lg mx-auto">
       {/* Contact Us */}
       <div className="w-full max-w-screen-lg py-10 mx-auto">
         <div className="relative w-full">
-          <h1 className="w-full text-6xl sm:text-7xl md:text-9xl text-center titan-font text-transparent l-font-outline dark:d-font-outline">
+          <h1 className="uppercase w-full text-6xl sm:text-7xl md:text-9xl text-center titan-font text-transparent l-font-outline dark:d-font-outline">
             Contact us
           </h1>
           <p
@@ -26,9 +23,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
+        <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16 px-4">
           {/* Card */}
-          <div className="bg-primary-lcard dark:bg-primary-dcard flex flex-col border rounded-5xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
+          <div className="bg-primary-lcard dark:bg-primary-dcard flex flex-col border rounded-2xl md:rounded-5xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
             <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">Fill in the form</h2>
             <form>
               <div className="grid gap-4">

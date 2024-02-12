@@ -4,6 +4,7 @@ import UserImg from "../assets/4.png";
 import BgImage from "../assets/bg-image-1.jpg";
 import React from "react";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -19,6 +20,21 @@ const Hero = () => {
       <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0 flex items-center mt-5 sm:mt-0">
         <div className="w-full text-center lg:text-left">
           <div className="max-w-lg mx-auto lg:mx-0">
+            <div className="inline-flex gap-1 items-center border p-1 rounded-full pr-3">
+              <div className="bg-slate-200 w-8 h-8 flex justify-center items-center rounded-full">
+                <motion.div
+                  animate={{
+                    rotate: [0, -10, 10, -10, 10, 0, 0, 0],
+                    transition: { delay: 0.1, repeat: Infinity, duration: 2 },
+                  }}
+                  style={{ transformOrigin: "bottom" }}
+                >
+                  <Icon className="text-2xl" icon="emojione:raised-hand" />
+                </motion.div>
+              </div>
+              <p className="text-sm font-semibold">I am Online</p>
+            </div>
+
             <h2 className="mb-3 text-4xl md:text-6xl font-bold">
               <span>Build &amp; Launch without </span>
               <span className="text-primary-orange"> problems</span>

@@ -13,28 +13,27 @@ const Hero = () => {
       className="relative flex flex-wrap min-h-screen items-center justify-center bg-[rgba(242,242,242,0.5)] dark:bg-[rgba(0,0,0,0.70)]"
     >
       <Image alt="image" sizes="100vw" className="top-0 bottom-0 left-0 right-0 absolute z-[-1] h-full" src={BgImage} />
-      <div className="w-full lg:w-1/2 px-4 flex items-center justify-center mt-16 sm:mt-0">
-        <Image alt="image" sizes="100vw" className="w-2/3" src={UserImg} />
-      </div>
+      <motion.div className="relative w-full lg:w-1/2 px-4 flex items-center justify-center mt-16 sm:mt-0">
+        <Image alt="image" sizes="100vw" className="relative w-2/3" src={UserImg} />
+        <div className="absolute top-3/4 inline-flex gap-2 items-center border p-1 rounded-full pr-3 bg-primary-lcard dark:bg-primary-dcard border-gray-300 dark:border-gray-500">
+          <div className="bg-slate-200 w-8 h-8 flex justify-center items-center rounded-full">
+            <motion.div
+              animate={{
+                rotate: [0, -10, 10, -10, 10, 0, 0, 0],
+                transition: { delay: 0.1, repeat: Infinity, duration: 2 },
+              }}
+              style={{ transformOrigin: "bottom" }}
+            >
+              <Icon className="text-2xl" icon="emojione:raised-hand" />
+            </motion.div>
+          </div>
+          <p className="text-sm font-semibold">Welcome, Stranger</p>
+        </div>
+      </motion.div>
 
       <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0 flex items-center mt-5 sm:mt-0">
         <div className="w-full text-center lg:text-left">
           <div className="max-w-lg mx-auto lg:mx-0">
-            <div className="inline-flex gap-1 items-center border p-1 rounded-full pr-3">
-              <div className="bg-slate-200 w-8 h-8 flex justify-center items-center rounded-full">
-                <motion.div
-                  animate={{
-                    rotate: [0, -10, 10, -10, 10, 0, 0, 0],
-                    transition: { delay: 0.1, repeat: Infinity, duration: 2 },
-                  }}
-                  style={{ transformOrigin: "bottom" }}
-                >
-                  <Icon className="text-2xl" icon="emojione:raised-hand" />
-                </motion.div>
-              </div>
-              <p className="text-sm font-semibold">I am Online</p>
-            </div>
-
             <h2 className="mb-3 text-4xl md:text-6xl font-bold">
               <span>Build &amp; Launch without </span>
               <span className="text-primary-orange"> problems</span>

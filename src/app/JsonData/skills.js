@@ -40,6 +40,11 @@ export const skillsData = [
     desc: "Utility-first CSS framework for building custom and responsive user interfaces.",
   },
   {
+    name: "Material UI",
+    logo: require("../assets/skill-icons/material-ui.svg").default,
+    desc: "React component library that implements Google's Material Design.",
+  },
+  {
     name: "Bootstrap 5",
     logo: require("../assets/skill-icons/bootstrap-plain.svg").default,
     desc: "Popular CSS framework for creating sleek and mobile-friendly web designs.",

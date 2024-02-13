@@ -26,7 +26,7 @@ export default function Header() {
       <motion.div
         variants={headerVariants}
         animate={hidden ? "hidden" : "visible"}
-        className="shadow-primary-lshadow flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-2 bg-primary-lcard dark:bg-primary-dcard dark:shadow-primary-dshadow"
+        className="shadow-primary-lshadow flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-2 bg-transparent dark:shadow-primary-dshadow backdrop-blur"
       >
         <nav
           className="relative max-w-[85rem] flex flex-wrap basis-full items-center w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
@@ -37,6 +37,7 @@ export default function Header() {
               <h1 className="text-3xl font-bold text-primary-orange cursive-font">Utkarsh</h1>
             </a>
           </div>
+
           <div className="flex items-center ms-auto sm:ms-0 sm:order-3">
             <div className="sm:hidden">
               <button
@@ -47,43 +48,45 @@ export default function Header() {
                 Menu <Icon className="text-xl ml-2" icon="gg:menu-right" />
               </button>
             </div>
-            <div className="ps-3 sm:ps-6 sm:ms-6 sm:border-s sm:border-gray-300 dark:border-gray-700">
+            <div className="ps-3 sm:ps-6 sm:ms-6">
               <ThemeSwitcher />
             </div>
           </div>
 
           <div
-            className={`hidden sm:block h-full max-w-xs w-full bg-primary-lcard dark:bg-primary-dcard border-e basis-full grow sm:order-2 sm:static sm:h-auto sm:max-w-none sm:w-auto sm:border-r-transparent sm:transition-none sm:translate-x-0 sm:z-40 sm:basis-auto dark:border-r-gray-700 sm:dark:border-r-transparent`}
+            className={`hidden sm:block h-full max-w-xs w-full basis-full grow sm:order-2 sm:static sm:h-auto sm:max-w-none sm:w-auto sm:border-r-transparent sm:transition-none sm:translate-x-0 sm:z-40 sm:basis-auto`}
             tabIndex={-1}
           >
-            <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-              <a className="font-medium text-primary-orange px-6 sm:py-2 sm:px-0" href="#home" aria-current="page">
-                Home
-              </a>
-              <a
-                className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#about"
-              >
-                About
-              </a>
-              <a
-                className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#my-works"
-              >
-                My Works
-              </a>
-              <a
-                className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#my-skills"
-              >
-                My Skills
-              </a>
-              <a
-                className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#contact"
-              >
-                Contact
-              </a>
+            <div className="flex justify-center items-center">
+              <div className="bg-primary-lcard dark:bg-primary-dcard py-1 px-4 border-[1.5px] rounded-full flex gap-x-3 dark:border-gray-500">
+                <a className="font-medium text-primary-orange px-6 sm:py-2 sm:px-0" href="#home" aria-current="page">
+                  Home
+                </a>
+                <a
+                  className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
+                  href="#about"
+                >
+                  About
+                </a>
+                <a
+                  className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
+                  href="#my-works"
+                >
+                  My Works
+                </a>
+                <a
+                  className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
+                  href="#my-skills"
+                >
+                  My Skills
+                </a>
+                <a
+                  className="font-medium text-gray-500 hover:text-gray-400 px-6 sm:py-2 sm:px-0 dark:text-gray-400 dark:hover:text-gray-500"
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </div>
             </div>
           </div>
         </nav>

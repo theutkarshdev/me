@@ -34,6 +34,7 @@ const Skills = () => {
 
               <h2 className="text-lg font-bold">{item.name}</h2>
             </div>
+            <p className="text-sm mt-2 opacity-70">{item.desc}</p>
           </div>
         ))}
       </div>

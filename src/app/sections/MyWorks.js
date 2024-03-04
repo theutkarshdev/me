@@ -1,6 +1,7 @@
 "use client";
 import { Icon } from "@iconify/react";
 import React from "react";
+import { myRecentWorksData } from "../JsonData/works";
 
 const MyWork = () => {
   return (
@@ -16,16 +17,18 @@ const MyWork = () => {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 px-4">
-        {[1, 2, 3, 4, 5, 6].map((item) => (
-          <div key={item} className="p-5 rounded-5xl bg-primary-lcard dark:bg-primary-dcard">
-            <Icon className="text-7xl text-primary-orange" icon="fluent:shield-task-24-regular" />
-            <h3 className="text-3xl font-bold">Some Awesome Peoject</h3>
-            <p className="mt-5 text-sm">
-              Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
-              previewing layouts and visual mockups.
-            </p>
-            <div className="flex justify-between items-center mt-5">
-              <a className="text-sm hover:text-primary-orange cursor-pointer">Read More</a>
+        {myRecentWorksData.map((item) => (
+          <div
+            key={item}
+            className="relative cursor-pointer p-5 rounded-5xl bg-landing-noise dark:bg-primary-dcard  bg-stone-100"
+          >
+            <h3 className="text-2xl font-bold">{item.title}</h3>
+            <h5 className="text-md font-semibold text-primary-orange">{item.subtitle}</h5>
+            <p className="mt-3 text-sm">{item.desc}</p>
+            <div className="flex justify-between items-center mt-3">
+              <a target="_blank" href={item?.link} className="text-sm hover:text-primary-orange cursor-pointer">
+                Read More
+              </a>
               <span className="cmn-svg40">
                 <svg width="32" height="25" viewBox="0 0 58 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path

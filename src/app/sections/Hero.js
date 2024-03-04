@@ -40,10 +40,10 @@ const Hero = () => {
             </h2>
             <h4 className="cursive-font text-2xl font-bold mt-3">Get your project estimations by today...</h4>
           </div>
-          <div className="max-w-sm mx-auto lg:mx-0 mt-5">
-            <p className="mb-6 text-gray-400 leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas
-              lobortis.
+          <div className="max-w-lg mx-auto lg:mx-0 mt-5">
+            <p className="mb-6">
+              Innovator by day, UX crafter by night. I build webapps come alive with my creative touch and build
+              user-friendly interfaces that make the internet a better place.
             </p>
             <div>
               <a
@@ -53,8 +53,25 @@ const Hero = () => {
                 Hire Me <Icon className="text-2xl" icon="uil:user-check" />
               </a>
               <a
-                className="inline-flex gap-2 items-center justify-center w-full md:w-auto py-2 px-6 leading-loose text-[#303030] font-semibold border-2 bg-transparent border-gray-600 rounded-l-xl rounded-t-xl transition duration-200 dark:border-white dark:text-white"
-                href="#"
+                className="inline-flex cursor-pointer gap-2 items-center justify-center w-full md:w-auto py-2 px-6 leading-loose text-[#303030] font-semibold border-2 bg-transparent border-gray-600 rounded-l-xl rounded-t-xl transition duration-200 dark:border-white dark:text-white"
+                onClick={() => {
+                  // Function to download the resume
+                  const downloadResume = () => {
+                    const anchor = document.createElement("a");
+                    anchor.href = "/UtkarshKushwahaResume.pdf"; // Replace 'your_resume_filename.pdf' with the actual filename and extension of your resume
+                    anchor.download = "UtkarshKushwahaResume.pdf"; // This attribute tells the browser to download the file with the specified name
+                    anchor.click();
+                  };
+
+                  // Function to open the resume in a new tab
+                  const openResumeInNewTab = () => {
+                    window.open("/UtkarshKushwahaResume.pdf", "_blank"); // Replace 'your_resume_filename.pdf' with the actual filename and extension of your resume
+                  };
+
+                  // Perform both actions
+                  downloadResume();
+                  openResumeInNewTab();
+                }}
               >
                 View Resume <Icon className="text-2xl" icon="fluent:document-person-20-regular" />
               </a>

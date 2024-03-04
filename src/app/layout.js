@@ -4,21 +4,21 @@ import "./styles/globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://theutkarshdev.vercel.app"),
-  title: "Utkarsh Kushwaha | Professional UI/UX Developer - Hire Now!",
+  title: "Utkarsh Kushwaha | React Frontend Developer",
   description:
-    "Looking for a web user interface developer? I am a professional UI/UX Developer and Web User Interface Developer with expertise in Frontend Web Development.",
+    "Looking for a web user interface developer? I am a React Frontend Developer and Web User Interface Developer with expertise in Frontend Web Development.",
   openGraph: {
-    title: "Utkarsh Kushwaha | Professional UI/UX Developer - Hire Now!",
+    title: "Utkarsh Kushwaha | React Frontend Developer",
     description:
-      "Looking for a web user interface developer? I am a professional UI/UX Developer and Web User Interface Developer with expertise in Frontend Web Development.",
+      "Looking for a web user interface developer? I am a React Frontend Developer and Web User Interface Developer with expertise in Frontend Web Development.",
     images: "https://theutkarshdev.vercel.app/opengraph-image.jpg",
   },
   twitter: {
     card: "summary_large_image",
     site: "https://theutkarshdev.vercel.app",
-    title: "Utkarsh Kushwaha | Professional UI/UX Developer - Hire Now!",
+    title: "Utkarsh Kushwaha | React Frontend Developer",
     description:
-      "Looking for a web user interface developer? I am a professional UI/UX Developer and Web User Interface Developer with expertise in Frontend Web Development.",
+      "Looking for a web user interface developer? I am a React Frontend Developer and Web User Interface Developer with expertise in Frontend Web Development.",
     images: "https://theutkarshdev.vercel.app/opengraph-image.jpg",
   },
 };

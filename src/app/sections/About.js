@@ -36,7 +36,7 @@ const About = () => {
           </h2>
 
           <p className="text-sm mt-10 max-w-screen-md mx-auto">
-            Hello there! 👋 I'm Utkarsh Kushwaha, and I have a firm belief in my abilities as a React Frontend
+            Hello there! 👋 I&apos;m Utkarsh Kushwaha, and I have a firm belief in my abilities as a React Frontend
             Developer. With 2-3 years of valuable experience under my belt, I bring a passion for creating exceptional
             user experiences through innovative and responsive web applications.
           </p>

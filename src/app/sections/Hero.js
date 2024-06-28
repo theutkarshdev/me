@@ -5,6 +5,8 @@ import BgImage from "../assets/bg-image-1.jpg";
 import React from "react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import GradualSpacing from "@magic-ui/gradual-spacing";
+import SparklesText from "@magic-ui/sparkles-text";
 
 const Hero = () => {
   return (
@@ -27,7 +29,7 @@ const Hero = () => {
               <Icon className="text-2xl" icon="emojione:raised-hand" />
             </motion.div>
           </div>
-          <p className="text-sm font-semibold">Welcome, Stranger</p>
+          <p className="text-sm font-semibold">Hola, Amigo</p>
         </div>
       </motion.div>
 
@@ -35,20 +37,25 @@ const Hero = () => {
         <div className="w-full text-center lg:text-left">
           <div className="max-w-lg mx-auto lg:mx-0">
             <h2 className="mb-3 text-4xl md:text-6xl font-bold">
-              <span>Build &amp; Launch without </span>
-              <span className="text-primary-orange"> problems</span>
+              <span>Build &amp; Launch your</span>
+              <SparklesText className="inline ml-2" text="Solutions" colors={{ first: "#F6724D", second: "#F75022" }} />
             </h2>
-            <h4 className="cursive-font text-2xl font-bold mt-3">Get your project estimations by today...</h4>
+
+            <GradualSpacing
+              className="cursive-font text-2xl mt-2 font-bold font-display tracking-[-0.1em]"
+              text="Get your project estimations by today..."
+            />
           </div>
           <div className="max-w-lg mx-auto lg:mx-0 mt-5">
             <p className="mb-6">
               Innovator by day, UX crafter by night. I build webapps come alive with my creative touch and build
               user-friendly interfaces that make the internet a better place.
             </p>
+
             <div>
               <a
                 className="inline-flex gap-2 items-center justify-center mb-3 md:mb-0 md:mr-3 w-full md:w-auto py-2 px-6 leading-loose bg-primary-orange border-2 border-primary-orange hover:bg-orange-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
-                href="#"
+                href="#contact"
               >
                 Hire Me <Icon className="text-2xl" icon="uil:user-check" />
               </a>

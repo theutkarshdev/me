@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import toast from "react-hot-toast";
+import WordPullUp from "@magic-ui/word-pull-up";
 
 const Contact = () => {
   const formHandler = () => {
@@ -13,14 +14,13 @@ const Contact = () => {
       <div className="w-full max-w-screen-lg py-10 mx-auto">
         <div className="relative w-full">
           <h1 className="uppercase w-full text-6xl sm:text-7xl md:text-9xl text-center titan-font text-transparent l-font-outline dark:d-font-outline">
-            Contact us
+            Contact me
           </h1>
-          <p
+          <WordPullUp
             className="text-2xl sm:text-3xl w-full text-center md:text-5xl titan-font
             absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-70"
-          >
-            How we can help you.
-          </p>
+            words=" How we can help you ?"
+          />
         </div>
 
         <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16 px-4">

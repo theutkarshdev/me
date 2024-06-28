@@ -1,8 +1,8 @@
 export const skillsData = [
   {
-    name: "React JS",
-    logo: require("../assets/skill-icons/react.svg").default,
-    desc: "Dynamic UI development for interactive and engaging web experiences.",
+    name: "Bootstrap 5",
+    logo: require("../assets/skill-icons/bootstrap-plain.svg").default,
+    desc: "Popular CSS framework for creating sleek and mobile-friendly web designs.",
   },
   {
     name: "Express JS",
@@ -35,6 +35,11 @@ export const skillsData = [
     desc: "Powerful CSS extension language for simplifying and organizing stylesheet code.",
   },
   {
+    name: "React JS",
+    logo: require("../assets/skill-icons/react.svg").default,
+    desc: "Dynamic UI development for interactive and engaging web experiences.",
+  },
+  {
     name: "Tailwind CSS",
     logo: require("../assets/skill-icons/tailwind-css.svg").default,
     desc: "Utility-first CSS framework for building custom and responsive user interfaces.",
@@ -45,24 +50,19 @@ export const skillsData = [
     desc: "React component library that implements Google's Material Design.",
   },
   {
-    name: "Bootstrap 5",
-    logo: require("../assets/skill-icons/bootstrap-plain.svg").default,
-    desc: "Popular CSS framework for creating sleek and mobile-friendly web designs.",
-  },
-  {
     name: "Git",
     logo: require("../assets/skill-icons/git.svg").default,
     desc: "Distributed version control system for tracking changes in code collaboratively.",
   },
   {
-    name: "BitBucket",
-    logo: require("../assets/skill-icons/bitbucket.svg").default,
-    desc: "Git repository management solution for hosting and collaborating on code projects.",
-  },
-  {
     name: "AWS",
     logo: require("../assets/skill-icons/aws.svg").default,
     desc: "Cloud computing platform for deploying and scaling web applications with ease.",
+  },
+  {
+    name: "BitBucket",
+    logo: require("../assets/skill-icons/bitbucket.svg").default,
+    desc: "Git repository management solution for hosting and collaborating on code projects.",
   },
   {
     name: "Docker",
@@ -73,10 +73,5 @@ export const skillsData = [
     name: "Jenkins",
     logo: require("../assets/skill-icons/jenkins-original.svg").default,
     desc: "Open-source automation server for continuous integration and delivery pipelines.",
-  },
-  {
-    name: "Jira",
-    logo: require("../assets/skill-icons/jira.svg").default,
-    desc: "Project management tool for tracking and organizing tasks and workflows efficiently.",
   },
 ];

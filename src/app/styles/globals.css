@@ -11,6 +11,13 @@
   .l-font-outline {
     -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.1);
   }
+
+  .bg-landing-noise {
+    background-image: url("/noise-light.png");
+  }
+  .bg-dark-noise {
+    background-image: url("/noise-dark.png");
+  }
 }
 
 @keyframes enter {
@@ -72,6 +79,7 @@
 .rounded-5xl {
   border-radius: 2rem;
 }
-.bg-landing-noise {
+
+.bg-noisy {
   background-image: url("/landing-noise.webp");
 }

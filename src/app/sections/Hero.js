@@ -42,7 +42,7 @@ const Hero = () => {
             </h2>
 
             <GradualSpacing
-              className="cursive-font text-2xl mt-2 font-bold font-display tracking-[-0.1em]"
+              className="cursive-font hidden md:block text-2xl mt-2 font-bold font-display tracking-[-0.1em]"
               text="Get your project estimations by today..."
             />
           </div>

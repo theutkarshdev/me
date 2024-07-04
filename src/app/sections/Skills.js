@@ -25,7 +25,7 @@ const Skills = () => {
         {skillsData.map((item, index) => (
           <div
             key={index}
-            className="relative p-3 border-[1.2px] rounded-3xl bg-primary-lcard dark:bg-[rgba(0,0,0,0.2)] dark:border-gray-400/[.55]"
+            className="relative p-3 border-[1.2px] rounded-3xl bg-noisy bg-primary-lcard dark:bg-[rgba(0,0,0,0.2)] dark:border-gray-400/[.55]"
           >
             <div className="flex gap-3 items-center">
               <div className="w-[50px] h-[50px] rounded-2xl border dark:border-gray-400/[.55] flex justify-center items-center">

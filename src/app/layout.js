@@ -1,6 +1,6 @@
 import React from "react";
-import Providers from "@components/GoogleAnalytics";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Providers from "@components/theme/providers";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./styles/globals.css";
 
 export const metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-primary-lighttheme dark:bg-primary-darktheme">
-        <GoogleAnalytics />
+        <GoogleTagManager gtmId="GTM-PSD9LGXV" />
         <Providers>{children}</Providers>
       </body>
     </html>
